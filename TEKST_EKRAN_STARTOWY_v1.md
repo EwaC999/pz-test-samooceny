@@ -59,4 +59,3 @@ Test nie jest narzędziem klinicznym ani diagnozą psychologiczną. Wynik nie je
 - Informacja o e-mailu jest widoczna przed rozpoczęciem testu.
 - Nazwa skali Rosenberga nie pojawia się na ekranie.
 - Nie obiecujemy interpretacji ani rekomendacji zależnych od progów wyniku.
-
