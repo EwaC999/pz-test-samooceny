@@ -4,7 +4,32 @@ Publiczny, bezpłatny test samooceny Pracowni Życia prowadzący do 30-dniowego 
 
 ## Status
 
-Projekt jest na etapie specyfikacji wdrożeniowej. Kod aplikacji nie został jeszcze utworzony.
+Pierwsza działająca wersja aplikacji jest gotowa lokalnie. Zawiera:
+
+- responsywny ekran startowy i 10 pytań;
+- automatyczne przechodzenie między pytaniami i zapamiętywanie postępu przez 24 godziny;
+- formularz adresu e-mail oraz ekran wyniku ze wskaźnikiem kołowym;
+- treść edukacyjną, ćwiczenie i przejście do 30-dniowego programu Wellena;
+- testy mechaniki punktacji.
+
+Wysyłka wyniku na adres e-mail jest na razie symulowana w interfejsie. Integracja z dostawcą poczty i analityka zostaną dodane przed publikacją.
+
+## Uruchomienie lokalne
+
+```bash
+pnpm install
+pnpm dev
+```
+
+Aplikacja będzie dostępna pod adresem `http://localhost:3000`.
+
+Kontrola jakości:
+
+```bash
+pnpm lint
+pnpm test
+pnpm build
+```
 
 ## Zatwierdzony kierunek techniczny
 

@@ -1,8 +1,11 @@
 # Dependencies and builds
 node_modules/
+.pnpm-store/
 .next/
 out/
 coverage/
+next-env.d.ts
+/LOGO_PZ_v2_20260811.zip
 
 # Local configuration and secrets
 .env
