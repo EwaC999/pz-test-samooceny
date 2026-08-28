@@ -157,7 +157,7 @@ export function SelfAssessment() {
 
   useEffect(() => {
     if (hydrated && stage === "questions") {
-      questionRef.current?.focus();
+      questionRef.current?.focus({ preventScroll: true });
     }
   }, [currentIndex, hydrated, stage]);
 
@@ -265,8 +265,8 @@ export function SelfAssessment() {
                 i
               </span>
               <p>
-                Odpowiadaj tak, jak jest dziś, nie tak, jak „powinno być”. Nie
-                ma dobrych ani złych odpowiedzi.
+                Odpowiadaj tak, jak jest, nie tak, jak „powinno być”. Nie ma
+                dobrych ani złych odpowiedzi.
               </p>
             </div>
           </div>

@@ -89,8 +89,8 @@
   gap: 8px 11px;
   margin: 26px 0 0;
   color: var(--green-deep);
-  font-size: 0.86rem;
-  font-weight: 650;
+  font-size: 0.9rem;
+  font-weight: 720;
   line-height: 1.5;
 }
 
@@ -120,9 +120,9 @@
 
 .guidance p {
   margin: 1px 0 0;
-  color: rgba(44, 42, 42, 0.79);
-  font-size: 0.92rem;
-  line-height: 1.65;
+  color: rgba(44, 42, 42, 0.69);
+  font-size: 0.84rem;
+  line-height: 1.55;
 }
 
 .testColumn {
@@ -605,7 +605,7 @@
   }
 
   .header {
-    padding-top: 22px;
+    padding-top: 16px;
   }
 
   .header img {
@@ -613,11 +613,15 @@
   }
 
   .main {
-    padding-top: 28px;
+    padding-top: 15px;
   }
 
   .hero {
-    gap: 31px;
+    gap: 21px;
+  }
+
+  .eyebrow {
+    margin-bottom: 12px;
   }
 
   .intro h1 {
@@ -625,41 +629,67 @@
   }
 
   .lead {
-    margin-top: 23px;
-    font-size: 1rem;
+    margin-top: 17px;
+    font-size: 0.96rem;
+    line-height: 1.55;
   }
 
   .meta {
-    gap: 5px 8px;
-    margin-top: 20px;
-    font-size: 0.79rem;
+    gap: 4px 7px;
+    margin-top: 15px;
+    font-size: 0.83rem;
+    line-height: 1.4;
   }
 
   .guidance {
-    margin-top: 23px;
-    padding-top: 19px;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 13px;
+  }
+
+  .guidanceMark {
+    flex-basis: 21px;
+    width: 21px;
+    height: 21px;
+    font-size: 0.76rem;
+  }
+
+  .guidance p {
+    font-size: 0.76rem;
+    line-height: 1.45;
   }
 
   .card {
     min-height: 0;
-    padding: 25px 20px;
-    border-radius: 21px;
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+
+  .progressHeader {
+    margin-bottom: 9px;
+    font-size: 0.72rem;
   }
 
   .question {
     min-height: 0;
-    margin: 29px 0 25px;
-    font-size: 1.8rem;
+    margin: 20px 0 18px;
+    font-size: 1.62rem;
+    line-height: 1.16;
+  }
+
+  .answers {
+    gap: 8px;
   }
 
   .answer {
-    min-height: 58px;
-    padding: 14px;
-    font-size: 0.88rem;
+    min-height: 52px;
+    gap: 11px;
+    padding: 11px 12px;
+    font-size: 0.84rem;
   }
 
   .cardFooter {
-    margin-top: 22px;
+    margin-top: 16px;
   }
 
   .autoAdvance {

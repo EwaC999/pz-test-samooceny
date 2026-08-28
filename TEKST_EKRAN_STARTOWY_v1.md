@@ -18,7 +18,7 @@ Dziesięć krótkich pytań pomoże Ci zobaczyć, jak wygląda Twoja relacja ze 
 
 ### Informacja przed rozpoczęciem
 
-Odpowiadaj tak, jak jest dziś, nie tak, jak „powinno być”. Nie ma dobrych ani złych odpowiedzi.
+Odpowiadaj tak, jak jest, nie tak, jak „powinno być”. Nie ma dobrych ani złych odpowiedzi.
 
 ---
 
