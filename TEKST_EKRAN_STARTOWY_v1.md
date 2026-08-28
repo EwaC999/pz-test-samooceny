@@ -8,7 +8,7 @@
 
 ### Nagłówek główny
 
-# Jak dziś oceniasz siebie?
+# Jak oceniasz siebie?
 
 ### Wprowadzenie
 

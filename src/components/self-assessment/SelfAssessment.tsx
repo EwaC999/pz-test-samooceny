@@ -228,12 +228,15 @@ export function SelfAssessment() {
   return (
     <div className={styles.pageShell}>
       <header className={styles.header}>
-        <a href="https://pracowniazycia.pl" aria-label="Pracownia Życia">
+        <a
+          href="https://www.pracowniazycia.pl/"
+          aria-label="Pracownia Życia — strona główna"
+        >
           <Image
-            src="/brand/logotyp-poziomy--grafit-krem.svg"
-            alt="Pracownia Życia"
-            width={210}
-            height={64}
+            src="/brand/logotyp-poziomy-deskryptor--grafit-krem.svg"
+            alt="Pracownia Życia — Mental Fitness"
+            width={300}
+            height={66}
             priority
           />
         </a>
@@ -243,7 +246,7 @@ export function SelfAssessment() {
         <section className={styles.hero} aria-labelledby="page-title">
           <div className={styles.intro}>
             <p className={styles.eyebrow}>Bezpłatny test samooceny</p>
-            <h1 id="page-title">Jak dziś oceniasz siebie?</h1>
+            <h1 id="page-title">Jak oceniasz siebie?</h1>
             <p className={styles.lead}>
               Dziesięć krótkich pytań pomoże Ci zobaczyć, jak wygląda Twoja
               relacja ze sobą. Po zakończeniu otrzymasz wynik, kontekst i
@@ -342,8 +345,7 @@ export function SelfAssessment() {
                   <p className={styles.cardEyebrow}>Wynik jest gotowy</p>
                   <h2>Gdzie wysłać Twój wynik?</h2>
                   <p className={styles.cardLead}>
-                    Podaj adres e-mail. Wynik zobaczysz również od razu na tej
-                    stronie.
+                    Podaj adres e-mail, na który otrzymasz wynik testu.
                   </p>
 
                   <form onSubmit={submitEmail} className={styles.emailForm}>
