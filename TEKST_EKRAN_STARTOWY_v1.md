@@ -12,9 +12,9 @@
 
 ### Wprowadzenie
 
-Dziesięć krótkich stwierdzeń pomoże Ci zobaczyć, jak wygląda dziś Twoja relacja ze sobą. Po zakończeniu otrzymasz wynik, spokojny kontekst i praktyczne ćwiczenie, do którego możesz wracać.
+Dziesięć krótkich pytań pomoże Ci zobaczyć, jak wygląda Twoja relacja ze sobą. Po zakończeniu otrzymasz wynik, kontekst i praktyczne ćwiczenie, które pomogą Ci budować większą pewność siebie.
 
-**2–3 minuty · bezpłatnie · wynik od razu po podaniu e-maila**
+**2–3 minuty · bezpłatnie · wynik od razu na adres e-mail**
 
 ### Informacja przed rozpoczęciem
 
@@ -39,15 +39,7 @@ Odpowiadaj tak, jak jest dziś, nie tak, jak „powinno być”. Nie ma dobrych 
 - Raczej się zgadzam
 - Zdecydowanie się zgadzam
 
-### Tekst pomocniczy pod odpowiedziami
-
-Wybierz odpowiedź, która najlepiej opisuje Cię dzisiaj.
-
----
-
 ## Informacja pod kartą
-
-Po ostatnim pytaniu poprosimy Cię o adres e-mail. Pełny wynik zobaczysz od razu na tej stronie, a jego kopię otrzymasz w wiadomości.
 
 Test nie jest narzędziem klinicznym ani diagnozą psychologiczną. Wynik nie jest oceną Ciebie ani miarą Twojej wartości — to punkt odniesienia do samorefleksji.
 
