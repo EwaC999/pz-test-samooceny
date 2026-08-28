@@ -1,0 +1,132 @@
+TEST
+
+Bezpłatny Test samooceny
+
+Jak dziś oceniasz siebie?
+
+Krótki test pomoże Ci zobaczyć, jak wygląda dziś Twoja samoocena. Otrzymasz wynik i wskazówki dopasowane do wyniku.
+
+Około 5 minut · bezpłatnie · wynik od razu
+
+Pytanie 1 z 10
+
+[Treść pierwszego stwierdzenia]
+
+
+Twój aktualny wynik
+Punkt wyjścia do samorefleksji.
+Krótka interpretacja
+Bez etykietowania i oceniania.
+Pierwsza wskazówka
+Co możesz zrobić dalej.
+
+
+
+
+
+Instrukcja dla programisty
+
+Zbudować test jako formularz wieloetapowy na jednej stronie. Pierwsze pytanie jest częścią hero. Po wybraniu odpowiedzi zawartość karty zmienia się bez przeładowania strony. Jednocześnie aktualizuje się numer pytania i pasek postępu. Użytkowniczka może cofnąć się do poprzedniego pytania. Po ostatnim pytaniu w tej samej karcie pojawia się pole e-mail i zgoda, a następnie wynik z interpretacją.
+
+
+
+jedno pytanie na ekranie;
+neutralna informacja „Pytanie 3 z 10”;
+możliwość cofnięcia się;
+po odpowiedzi automatyczne przejście dalej;
+e-mail dopiero po ostatnim pytaniu;
+wynik natychmiast na tej samej stronie.
+
+Dodatkowe wyjaśnienie metodologii i informację, że test nie jest diagnozą, umieściłabym pod formularzem. Będą dostępne dla osób, które ich potrzebują, ale nie zatrzymają pozostałych przed rozpoczęciem.
+
+
+Po wybraniu odpowiedzi:
+odpowiedź zostaje tymczasowo zapisana w przeglądarce;
+zawartość karty zmienia się z pytania 1 na pytanie 2;
+aktualizuje się napis „Pytanie 2 z 10” i pasek postępu;
+strona nie przeładowuje się i adres pozostaje ten sam;
+po ostatnim pytaniu w tej samej karcie pojawia się formularz e-mail;
+po podaniu e-maila karta zmienia się w ekran wyniku.
+
+To nie jest prawdziwy „frame”. Wizualnie wygląda jak ramka, ale technicznie jest jednym dynamicznym elementem strony.
+
+
+Jak zachowuje się reszta landingu
+Na desktopie tekst po lewej może pozostać nieruchomy, a zmieniają się tylko pytania w karcie po prawej.
+Na telefonie po rozpoczęciu testu można:
+pozostawić krótki nagłówek nad kartą;
+automatycznie przesunąć ekran do początku kolejnego pytania;
+nie pokazywać ponownie całego wprowadzenia przy każdym pytaniu.
+
+
+
+
+Lejek test:
+Artykuł, post, film albo reklama PŻ.
+CTA: „Zrób bezpłatny Test samooceny”.
+Test 
+Wynik po podaniu maila+ zaproszenie do poznania Welleny.
+Zapis do sekwencji mailowej.
+Sekwencja edukacyjno-sprzedażowa.
+Landing page Welleny.
+Zakup i nowy pomiar w dniu 1.
+
+
+
+Rekomendowany przebieg
+Użytkowniczka wchodzi na test.
+Od razu widzi:
+czego dotyczy test,
+że zajmie około 5 minut,
+co otrzyma: wynik i rekomendacje.
+Wypełnia cały test
+Po ostatnim pytaniu widzi:
+"Twój wynik jest gotowy"
+Podaj e-mail, aby zobaczyć pełny wynik i rekomendacje dla Ciebie.
+Podaje e-mail.
+Wynik natychmiast pojawia się na ekranie.
+Kopia wyniku przychodzi także e-mailem.
+Na końcu wyniku znajduje się naturalne przejście do Welleny.
+
+
+
+Co dokładnie dać po podaniu e-maila
+Sam wynik liczbowy to za mało. Użytkowniczka powinna dostać:
+wynik,
+wartość dodatkowa - do ustalenia
+zaproszenie do Welleny np "Test pokazuje, jak dziś oceniasz siebie. Sama wiedza o wyniku nie zmienia jednak sposobu, w jaki podejmujesz decyzje i działasz. Wellena pomaga pracować nad tym przez 30 dni — w odniesieniu do konkretnego kroku, który odkładasz."
+
+
+----------------------
+
+Test powinien być głównym CTA dla:
+zimnego ruchu z reklam,
+czytelniczek artykułów SEO,
+nowych osób z social mediów,
+osób, które jeszcze nie rozważają zakupu.
+
+Natomiast do landing page Welleny kierowałabym bezpośrednio:
+obecną bazę newsletterową,
+osoby, które już wykonały test,
+osoby powracające,
+retargeting,
+treści bezpośrednio opisujące program i jego zastosowanie.
+
+Test wydłuża lejek. Jest pomocny dla osoby, która dopiero rozpoznaje problem, ale zbędny dla osoby gotowej kupić.
+
+
+
+
+
+
+---------------
+
+
+
+
+
+Marketing measurement:
+
+Nie pokazywałabym pełnego wyniku przed podaniem e-maila. Można pokazać komunikat „Twój wynik jest gotowy”, ale nie liczbę ani interpretację
+
+Ponieważ test i sprzedaż będą na dwóch różnych domenach, trzeba ustawić pomiar między pracowniazycia.pl i wellena.pl; GA4 ma do tego osobną konfigurację cross-domain measurement.

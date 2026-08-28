@@ -1,0 +1,175 @@
+# Framework WARTOŚĆ — Pracownia Życia (Wellena)
+## Wersja bazowa v1.0 · lipiec 2026
+
+> **Kontekst strategiczny:** Pracownia Życia w latach 2026-2027 koncentruje się na jednym temacie — **pewność siebie**. Wellena (AI Coach Pewności Siebie) jest pierwszym MVP w obszarze pewności siebie. PŻ pozostaje marką-parasolem; Wellena istnieje na wellena.pl jako produkt-brand, marketing prowadzony z konta PŻ.
+
+---
+
+## W — Wyróżnik (założenie)
+
+### Para osi wybranych (do walidacji w ankiecie i rozmowach bezpośrednich)
+**Prywatność / Introwersja** ↔ **Nauka**
+
+- **Prywatność:** bez grup, bez sisterhood, bez live'ów, bez ekspozycji
+- **Nauka:** twarda metoda oparta na badaniach (psychologia pozytywna, praca z przekonaniami, framework 6 kroków)
+
+### Wyróżnik PŻ (zdanie robocze)
+
+> **Pracownia Życia to platforma do budowania pewności siebie dla kobiet stojących na progu ważnej zmiany życiowej lub zawodowej.
+
+### Test Purple Cow
+| Pytanie | Ocena |
+|---|:-:|
+| Jedno wyróżniające zdanie? | ✅ |
+| Klient dostrzeże w 10 sek? | ⚠️ (wymaga hooka na front) |
+| Powód do polecenia? | ✅ |
+| Trudne do skopiowania? | ⚠️ (unikalne połączenie, nie pojedyncze cechy) |
+| Interesujące przed reklamą? | ✅ |
+
+**Wynik: 5/5 warunkowe TAK.** Wyróżnik ma potencjał, ale wymaga silnego hooka na front komunikacji.
+
+### Kto NIE jest klientem (świadome wykluczenie)
+- Osoby szukające grupowej społeczności, live'ów, „sisterhood"
+- Osoby szukające „wibracji", energii kobiecej, karmicznej, ezoteryki
+- Osoby szukające szybkiej motywacji i tips-and-tricks
+
+---
+
+## A — Ambaras (Problem + ICP)
+
+### Subnisza 
+Kobiety 35-50 stojące na progu ważnej zmiany życiowej lub zawodowej, które mają kompetencje, ale sabotują swoje decyzje i stoją w miejscu z powodu syndromu oszustki.
+
+### 3 warianty ICP do walidacji w ankiecie
+1. **Kobiety w zmianie zawodowej** — nowa praca, awans, zmiana branży, powrót po przerwie, założenie firmy, utrata pracy
+2. **Kobiety w zmianie osobistej** — rozwód, koniec związku, wdowieństwo, dzieci wychodzą z domu
+3. **Kobiety w zmianie tożsamościowej** — kryzys wieku średniego, „coś we mnie się skończyło", poczucie pustki
+
+### PROBLEM (jedno zdanie)
+> Wiem, że potrafię więcej i stoję przed ważnym krokiem — ale bardziej niż okoliczności zatrzymuje mnie brak wiary w siebie i wewnętrzny krytyk.
+
+### Persona
+
+**Kobieta na progu zmiany**
+
+Kobieta, 35–50 lat. Ma za sobą lata pracy — a często też ról rodzinnych i relacyjnych. Dziś stoi w punkcie zwrotnym: zmienia pracę lub branżę, zakłada firmę, obejmuje nowe stanowisko, wraca na rynek pracy po przerwie, kończy związek lub podejmuje inną ważną decyzję życiową, ale wewnętrzny głos wciąż pyta: „a jeśli sobie nie poradzę?".
+
+**Główne wyzwania:** w głębi duszy wie, że potrafi więcej, ale ciągle podważa siebie; czuje syndrom oszustki („zaraz wszyscy odkryją, że się nie nadaję"); trudno jej doceniać własne osiągnięcia — skupia się na tym, czego jej brakuje; odkłada ważne działania z lęku przed porażką lub oceną; wewnętrzny krytyk jest głośniejszy niż jej mocne strony i sukcesy; wybiera bezpieczeństwo zamiast możliwości, nawet gdy wie, czego naprawdę chce.
+
+**Czego szuka:** nie warsztatów w grupie, nie sisterhood, nie afirmacji i motywacyjnych cytatów. Szuka konkretnej metody, w którą może wejść prywatnie, we własnym tempie, bez pokazywania się nikomu — i osoby (lub narzędzia), które pamiętają jej historię i towarzyszą jej w drodze.
+
+**Język:** spokojny, dojrzały, konkretny. Do kobiety, która wie, co chce osiągnąć, i ma dość powierzchownych porad. Bez coachingowego entuzjazmu, bez „siostrzanej" bliskości, bez współczucia. Traktuje ją jak partnerkę, nie uczennicę.
+
+### Test subniszy
+- ✅ Silny ból (progowa zmiana = wysokie napięcie emocjonalne)
+- ✅ Siła nabywcza (kobiety dojrzałe, po latach pracy, inwestują w siebie)
+- ⚠️ Łatwość dotarcia — kanały po etapie życia (grupy dla kobiet w zmianie pracy, po rozwodzie itp.) — do doprecyzowania w Etapie 6
+- ✅ Rynek rosnący (zmiany zawodowe kobiet 35-50 rosną w PL)
+
+
+## R — Rdzeń (Pozycjonowanie)
+
+### Zdanie pozycjonujące
+
+> **Pracownia Życia pomaga kobietom stojącym na progu ważnej zmiany życiowej lub zawodowej odzyskać pewność siebie, wchodząc w nowy etap życia z jasnością i wiarą we własne możliwości — poprzez zaplanowany proces oparty na metodzie psychologii pozytywnej i pracy z przekonaniami.**
+
+---
+
+## T — Transformacja
+
+### Efekt końcowy (wewnętrznie + zewnętrznie)
+
+**Wewnętrznie** — kobieta zna swoje mocne strony, ufa własnym decyzjom, wewnętrzny krytyk cichnie.
+
+**Zewnętrznie** — realnie wchodzi w wyzwanie: podpisuje umowę, zakłada firmę, mówi „nie" toksycznej relacji, podejmuje decyzję, którą odkładała miesiącami.
+
+### Status / tożsamość
+Z kobiety, która „wie, ale się nie porusza" — w kobietę, która **działa mimo lęku**. **Poruszająca się do przodu.**
+
+### Historia, którą opowie znajomej
+> *„Wreszcie to zrobiłam. I widzę, że dam radę."*
+
+### Manifest marki
+> **Pracownia Życia — bo Twoja wiedza wreszcie ma się przełożyć na realne życie. Twoje decyzje. Twoje wyniki. Twoją energię. Twoje relacje. Bez coachingowych sloganów. Bez akademickiej teorii. Namacalna zmiana wewnątrz i konkretne rezultaty na zewnątrz.**
+
+---
+
+## O — Oferta (Grand Slam Offer)
+
+### Równanie wartości = Efekt ÷ Koszt
+
+### Dream Outcome
+Wchodzisz w swoje wyzwanie pewna siebie — z jasnością, kim jesteś i na czym stoisz.
+
+### Rozwiązanie: MVP Wellena
+Prowadzony proces **bezterminowy**. Klientka wchodzi i zostaje tak długo, jak tego potrzebuje. Framework 6 kroków jako mapa, ale bez sztywnego kalendarza.
+
+### Cena robocza
+- Subskrypcja miesięczna / kwartalne / roczna
+- **Do doprecyzowania sesji cenowej**
+
+### Status 4 dźwigni Grand Slam Offer
+
+| Dźwignia | Status | Co jest / czego brakuje |
+|---|:-:|---|
+| **Dream Outcome** (wymarzony wynik) | ✅ | Z T: kobieta wchodzi w wyzwanie pewna siebie, wewnętrznie + zewnętrznie |
+| **Prawdopodobieństwo sukcesu** | ⚠️ | **Brak:** social proof, referencji, case studies (produkt świeży). Potrzebna gwarancja lub pierwsi klienci beta z opiniami. |
+| **Opóźnienie czasowe** | ⚠️ | **Brak:** quick wins w tygodniu 1 (co konkretnie klientka zobaczy po 7 dniach?). Bezterminowy proces = ryzyko braku momentum. |
+| **Wysiłek i poświęcenie** | ✅ | Prywatnie, we własnym tempie, AI = niski próg wejścia |
+
+---
+
+## Ś — Ścieżka klienta (Customer Journey)
+
+### 5 etapów × poziomy świadomości × kanały
+
+| Etap | Świadomość klientki | Kanał (temperatura) | Cel | Narzędzia |
+|---|---|---|---|---|
+| **Świadomość** | Nieświadoma problemu / świadoma, nie szuka | Zimny | Uświadomić: „to nie kompetencje, to pewność siebie" | SEO (blog PŻ, problem-pages), LinkedIn Ewy, wystąpienia |
+| **Rozważanie** | Zbiera info | Ciepły | Zaufanie | Newsletter, lead magnet (test/quiz), case studies |
+| **Decyzja** | Gotowa | Gorący | Usunąć tarcie | Wellena.pl sales page, gwarancja, prosty CTA |
+| **Utrzymanie** | Klientka | Gorący | Quick wins tygodnia 1 | Onboarding w Wellena, framework 6 kroków |
+| **Polecenie** | Ambasadorka | Gorący → Zimny | Zamknąć pętlę | Program poleceń, case study |
+
+### Główne 3 kanały (potwierdzone z sesji majowej)
+SEO + LinkedIn + Newsletter
+
+---
+
+## Ć — Ćwicz (KPI walidacji)
+
+### 3 KPI walidacji dla Wellena MVP (pierwsze 90 dni po launchu)
+
+| KPI | Cel walidacji | Próg pivot |
+|---|---|---|
+| **Konwersja** (odwiedzający → zakup) | ≥ 2% z ruchu ciepłego (baza + newsletter) | < 0,5% = problem z ofertą lub ceną |
+| **NPS / satysfakcja po tygodniu 1** | ≥ 40 (dobry) | < 20 = problem z produktem |
+| **Retencja / dokończenie procesu** | ≥ 50% zostaje po miesiącu | < 30% = brak wartości długoterminowej |
+
+### Decyzja po 90 dniach
+- ✅ Wszystkie 3 KPI powyżej progu = **skalujemy** (przechodzimy do Etapu 6-8)
+- ⚠️ 2/3 = **iterujemy** (poprawka konkretnego elementu)
+- ❌ 1/3 lub mniej = **pivot** (wracamy do W lub A)
+
+---
+
+## Otwarte punkty / do doprecyzowania
+
+1. **Ankieta walidacyjna** — zaprojektowana (15 pytań), gotowa do wypuszczenia. Cel: 50-100 odpowiedzi z bazy PŻ + LinkedIn.
+2. **Wywiady pogłębione** — 3-5 rozmów po ankiecie, z osób, które zaznaczyły chęć rozmowy.
+3. **Dźwignia 2 (Prawdopodobieństwo)** — brak social proof. Rozważyć: program beta, gwarancja zwrotu, testimoniale.
+4. **Dźwignia 3 (Opóźnienie)** — quick wins tygodnia 1 nie zdefiniowane. Wymagane doprecyzowanie w projekcie produktu.
+5. **Cena finalna** — pasmo 49-89 zł/mies lub 497-897 zł/rok, do walidacji w ankiecie (pytanie 11).
+6. **Etap 6 (kanały) i Etap 8 (roadmapa 30/90 dni)** — nierozpisane. Kolejny krok pracy.
+
+---
+
+
+## Następny krok
+
+**Etap 6 MH — Strategia marketingowa:**
+- 2-3 główne kanały (SEO, LinkedIn, Newsletter) z uzasadnieniem
+- Lejek marketingowy (świadomość → zainteresowanie → konwersja) — rozwinięcie AARRR
+- 3 KPI marketingowe (nad KPI produktowymi z Ć)
+
+**Potem: Etap 8 MH — Roadmapa 30/90 dni.**
