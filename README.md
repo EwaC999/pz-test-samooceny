@@ -22,6 +22,6 @@ Projekt jest na etapie specyfikacji wdrożeniowej. Kod aplikacji nie został jes
 - [`SPECYFIKACJA_WDROZENIOWA_TESTU_v1.md`](./SPECYFIKACJA_WDROZENIOWA_TESTU_v1.md) — przebieg, architektura i kryteria odbioru;
 - [`TEST_SAMOOCENY_MECHANIKA_v1.md`](./TEST_SAMOOCENY_MECHANIKA_v1.md) — pytania i źródło prawdy dla punktacji;
 - [`TEST SAMOOCENY PŻ.txt`](./TEST%20SAMOOCENY%20PŻ.txt) — robocza treść landingu;
+- [`TEKST_EKRAN_STARTOWY_v1.md`](./TEKST_EKRAN_STARTOWY_v1.md) — rekomendowany tekst pierwszego ekranu i pytania 1;
 - [`WYNIK TESTU.txt`](./WYNIK%20TESTU.txt) — robocza treść wyniku;
 - [`Kontekst/`](./Kontekst/) — strategia oraz zasady marki i języka.
-
