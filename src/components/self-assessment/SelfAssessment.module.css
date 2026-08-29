@@ -75,9 +75,18 @@
   line-height: 0.98;
 }
 
+.leadStatement {
+  max-width: 620px;
+  margin: 27px 0 0;
+  color: var(--graphite);
+  font-size: clamp(1.02rem, 1.3vw, 1.14rem);
+  font-weight: 720;
+  line-height: 1.5;
+}
+
 .lead {
   max-width: 620px;
-  margin: 30px 0 0;
+  margin: 11px 0 0;
   color: var(--graphite);
   font-size: clamp(1.06rem, 1.4vw, 1.19rem);
   line-height: 1.72;
@@ -628,8 +637,14 @@
     font-size: clamp(2.55rem, 11.5vw, 3.45rem);
   }
 
+  .leadStatement {
+    margin-top: 14px;
+    font-size: 0.93rem;
+    line-height: 1.4;
+  }
+
   .lead {
-    margin-top: 17px;
+    margin-top: 7px;
     font-size: 0.96rem;
     line-height: 1.55;
   }

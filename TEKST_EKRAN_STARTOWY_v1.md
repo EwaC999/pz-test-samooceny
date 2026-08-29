@@ -10,6 +10,10 @@
 
 # Jak oceniasz siebie?
 
+### Zdanie wprowadzające
+
+**To, jak oceniasz siebie, wiąże się z tym, na ile sobie ufasz.**
+
 ### Wprowadzenie
 
 Dziesięć krótkich pytań pomoże Ci zobaczyć, jak wygląda Twoja relacja ze sobą. Po zakończeniu otrzymasz wynik, kontekst i praktyczne ćwiczenie, które pomogą Ci budować większą pewność siebie.

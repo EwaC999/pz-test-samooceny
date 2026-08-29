@@ -247,6 +247,9 @@ export function SelfAssessment() {
           <div className={styles.intro}>
             <p className={styles.eyebrow}>Bezpłatny test samooceny</p>
             <h1 id="page-title">Jak oceniasz siebie?</h1>
+            <p className={styles.leadStatement}>
+              To, jak oceniasz siebie, wiąże się z tym, na ile sobie ufasz.
+            </p>
             <p className={styles.lead}>
               Dziesięć krótkich pytań pomoże Ci zobaczyć, jak wygląda Twoja
               relacja ze sobą. Po zakończeniu otrzymasz wynik, kontekst i
