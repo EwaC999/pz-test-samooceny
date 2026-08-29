@@ -15,6 +15,7 @@ import {
 import {
   isAnswerValue,
   scoreAnswers,
+  scoreProgress,
 } from "@/domain/self-esteem-v1/score";
 import type { AnswerValue } from "@/domain/self-esteem-v1/types";
 import styles from "./SelfAssessment.module.css";
@@ -50,7 +51,7 @@ function hasCompleteAnswers(
 function ResultGauge({ score }: { score: number }) {
   const radius = 74;
   const circumference = 2 * Math.PI * radius;
-  const progress = Math.min(Math.max((score - 10) / 30, 0), 1);
+  const progress = scoreProgress(score);
   const arcLength = circumference * 0.75;
   const valueLength = Math.max(arcLength * progress, 0.001);
 
@@ -94,13 +95,7 @@ function ResultGauge({ score }: { score: number }) {
   );
 }
 
-function ResultScreen({
-  score,
-  onRestart,
-}: {
-  score: number;
-  onRestart: () => void;
-}) {
+function ResultScreen({ score }: { score: number }) {
   return (
     <main className={styles.resultMain}>
       <section className={styles.resultHero} aria-labelledby="result-title">
@@ -121,7 +116,7 @@ function ResultScreen({
 
           <div className={styles.resultGaugePanel}>
             <ResultGauge score={score} />
-            <p>Twój dzisiejszy punkt odniesienia</p>
+            <p>Twój dzisiejszy wynik</p>
           </div>
         </div>
 
@@ -130,10 +125,9 @@ function ResultScreen({
             i
           </span>
           <p>
-            Test jest autorskim wskaźnikiem samooceny inspirowanym skalą
-            Rosenberga. Nie jest narzędziem klinicznym ani diagnozą
-            psychologiczną. Niezależnie od miejsca, z którego zaczynasz, możesz
-            pracować nad relacją ze sobą.
+            Test nie jest narzędziem klinicznym ani diagnozą psychologiczną.
+            Niezależnie od miejsca, z którego zaczynasz, możesz pracować nad
+            relacją ze sobą.
           </p>
         </div>
       </section>
@@ -143,18 +137,16 @@ function ResultScreen({
         aria-labelledby="education-title"
       >
         <div className={styles.sectionHeading}>
-          <p className={styles.sectionEyebrow}>Mini edukacja</p>
           <h2 id="education-title">Co warto wiedzieć o relacji ze sobą</h2>
         </div>
 
         <div className={styles.educationGrid}>
           <article className={styles.educationCard}>
-            <span className={styles.educationNumber} aria-hidden="true">
-              01
+            <span className={styles.educationIcon} aria-hidden="true">
+              ♡
             </span>
             <h3>Pewność siebie i poczucie własnej wartości</h3>
             <p>
-              Pewność siebie nie jest tym samym co poczucie własnej wartości.
               Pewność siebie jest zewnętrznym objawem wewnętrznego poczucia
               własnej wartości i skuteczności. Poczucie własnej wartości sięga
               głębiej: oznacza przekonanie, że masz nienaruszalną wartość i
@@ -164,17 +156,17 @@ function ResultScreen({
           </article>
 
           <article className={styles.educationCard}>
-            <span className={styles.educationNumber} aria-hidden="true">
-              02
+            <span className={styles.educationIcon} aria-hidden="true">
+              ↻
             </span>
             <h3>Poczucie własnej wartości nie jest ustalone raz na zawsze</h3>
             <p>
               Na sposób, w jaki dziś myślisz o sobie, wpłynęły między innymi
               doświadczenia z dzieciństwa, pierwsze relacje oraz komunikaty,
-              które otrzymywałaś od ważnych osób. Jako dziecko nie miałaś wpływu
-              na wiele z tych doświadczeń ani możliwości spojrzenia na nie z
-              dorosłej perspektywy. Nie oznacza to jednak, że dzieciństwo musi
-              na zawsze określać Twój stosunek do siebie.
+              które otrzymywałaś od ważnych osób. Jako dziecko nie miałaś
+              możliwości spojrzenia na nie z dorosłej perspektywy. Nie oznacza
+              to jednak, że to, co wyniosłaś z dzieciństwa, musi na zawsze
+              określać Twój stosunek do siebie.
             </p>
             <p>
               Jako dorosła osoba możesz przejąć odpowiedzialność za swoje życie
@@ -266,82 +258,73 @@ function ResultScreen({
 
       <section className={styles.wellenaSection} aria-labelledby="wellena-title">
         <div className={styles.wellenaInner}>
-          <div className={styles.wellenaVisual}>
-            <Image
-              src="/brand/wellena-spokojna-sprawczosc.png"
-              alt="Kobieta porządkująca notatki przed podjęciem działania"
-              fill
-              sizes="(max-width: 960px) 100vw, 46vw"
-            />
-            <p>Przygotowanie. Decyzja. Działanie.</p>
-          </div>
+          <div className={styles.wellenaLead}>
+            <div className={styles.wellenaVisual}>
+              <Image
+                src="/brand/wellena-spokojna-sprawczosc.png"
+                alt="Kobieta porządkująca notatki przed podjęciem działania"
+                fill
+                sizes="(max-width: 960px) 100vw, 46vw"
+              />
+            </div>
 
-          <div className={styles.wellenaCopy}>
-            <p className={styles.wellenaLabel}>
-              Wellena — program Pracowni Życia
-            </p>
-            <h2 id="wellena-title">
-              Nie zawsze brakuje Ci kompetencji. Czasem najbardziej zatrzymuje
-              Cię brak zaufania do siebie.
-            </h2>
-            <p className={styles.wellenaSummary}>
-              <strong>
-                Wellena to 30-dniowy indywidualny program budowania pewności
-                siebie z osobistą przewodniczką AI.
-              </strong>
-            </p>
-            <p>
-              Pomaga Ci lepiej poznać siebie, zobaczyć realne podstawy zaufania
-              do siebie i przekładać wnioski na małe działania w codziennym
-              życiu.
-            </p>
-
-            <div className={styles.wellenaDetails}>
-              <h3>Podczas 30-dniowego programu:</h3>
-              <ul className={styles.wellenaList}>
-                <li>lepiej poznajesz swoje mocne strony, wartości i zasoby,</li>
-                <li>
-                  przyjrzysz się przekonaniom i reakcjom, które zatrzymują Cię
-                  przed działaniem,
-                </li>
-                <li>nauczysz się dbać o swoje potrzeby i granice,</li>
-                <li>
-                  zobaczysz, jak przełożyć wnioski na małe działania w realnym
-                  życiu,
-                </li>
-                <li>
-                  będziesz budować zaufanie do siebie poprzez własne
-                  doświadczenia i małe kroki.
-                </li>
-              </ul>
-              <p className={styles.wellenaPurpose}>
-                Celem nie jest stworzenie „nowej Ciebie”. Chodzi o to, żebyś
-                wyraźniej zobaczyła to, na czym już możesz się oprzeć, i zrobiła
-                krok, który do tej pory odkładałaś.
+            <div className={styles.wellenaCopy}>
+              <p className={styles.wellenaLabel}>
+                Wellena — program Pracowni Życia
               </p>
-              <a
-                className={[styles.primaryButton, styles.wellenaCta].join(" ")}
-                href="https://wellena.pl"
-              >
-                Zobacz, jak działa Wellena
-              </a>
-              <p className={styles.wellenaMeta}>
-                30 dni · indywidualny proces · program rozwojowy, nie terapia
+              <h2 id="wellena-title">
+                Nie zawsze brakuje Ci kompetencji. Czasem najbardziej zatrzymuje
+                Cię brak zaufania do siebie.
+              </h2>
+              <p className={styles.wellenaSummary}>
+                <strong>
+                  Wellena to 30-dniowy indywidualny program budowania pewności
+                  siebie z osobistą przewodniczką AI.
+                </strong>
+              </p>
+              <p>
+                Pomaga Ci lepiej poznać siebie, zobaczyć realne podstawy zaufania
+                do siebie i przekładać wnioski na małe działania w codziennym
+                życiu.
               </p>
             </div>
           </div>
+
+          <div className={styles.wellenaDetails}>
+            <h3>Podczas 30-dniowego programu:</h3>
+            <ul className={styles.wellenaList}>
+              <li>lepiej poznajesz swoje mocne strony, wartości i zasoby,</li>
+              <li>
+                przyjrzysz się przekonaniom i reakcjom, które zatrzymują Cię
+                przed działaniem,
+              </li>
+              <li>nauczysz się dbać o swoje potrzeby i granice,</li>
+              <li>
+                zobaczysz, jak przełożyć wnioski na małe działania w realnym
+                życiu,
+              </li>
+              <li>
+                będziesz budować zaufanie do siebie poprzez własne doświadczenia
+                i małe kroki.
+              </li>
+            </ul>
+            <p className={styles.wellenaPurpose}>
+              Celem nie jest stworzenie „nowej Ciebie”. Chodzi o to, żebyś
+              wyraźniej zobaczyła to, na czym już możesz się oprzeć, i zrobiła
+              krok, który do tej pory odkładałaś.
+            </p>
+            <a
+              className={[styles.primaryButton, styles.wellenaCta].join(" ")}
+              href="https://wellena.pl"
+            >
+              Zobacz, jak działa Wellena
+            </a>
+            <p className={styles.wellenaMeta}>
+              30 dni · indywidualny proces · program rozwojowy, nie terapia
+            </p>
+          </div>
         </div>
       </section>
-
-      <footer className={styles.resultFooter}>
-        <button
-          type="button"
-          className={styles.restartButton}
-          onClick={onRestart}
-        >
-          Wypełnij test ponownie
-        </button>
-      </footer>
     </main>
   );
 }
@@ -517,16 +500,6 @@ export function SelfAssessment() {
     window.localStorage.removeItem(STORAGE_KEY);
   };
 
-  const restart = () => {
-    setAnswers(emptyAnswers());
-    setCurrentIndex(0);
-    setStage("questions");
-    setEmail("");
-    setMarketingConsent(false);
-    setScore(null);
-    window.sessionStorage.removeItem(RESULT_STORAGE_KEY);
-  };
-
   const progress = ((currentIndex + 1) / QUESTIONS.length) * 100;
   const currentQuestion = QUESTIONS[currentIndex];
 
@@ -548,7 +521,7 @@ export function SelfAssessment() {
       </header>
 
       {stage === "result" && score !== null ? (
-        <ResultScreen score={score} onRestart={restart} />
+        <ResultScreen score={score} />
       ) : (
         <main className={styles.main}>
           <section className={styles.hero} aria-labelledby="page-title">

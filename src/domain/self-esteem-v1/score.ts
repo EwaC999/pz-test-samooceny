@@ -1,6 +1,9 @@
 import { QUESTIONS } from "./questions";
 import type { AnswerValue } from "./types";
 
+const MIN_SCORE = 10;
+const MAX_SCORE = 40;
+
 export function isAnswerValue(value: unknown): value is AnswerValue {
   return Number.isInteger(value) && [1, 2, 3, 4].includes(value as number);
 }
@@ -20,4 +23,12 @@ export function scoreAnswers(answers: readonly AnswerValue[]): number {
 
     return total + points;
   }, 0);
+}
+
+export function scoreProgress(score: number): number {
+  if (!Number.isInteger(score) || score < MIN_SCORE || score > MAX_SCORE) {
+    throw new Error(`Score must be an integer from ${MIN_SCORE} to ${MAX_SCORE}.`);
+  }
+
+  return (score - MIN_SCORE) / (MAX_SCORE - MIN_SCORE);
 }

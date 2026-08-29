@@ -277,8 +277,7 @@
   margin-top: 29px;
 }
 
-.backButton,
-.restartButton {
+.backButton {
   padding: 8px 2px;
   border: 0;
   border-radius: 6px;
@@ -294,8 +293,7 @@
   opacity: 0;
 }
 
-.backButton:focus-visible,
-.restartButton:focus-visible {
+.backButton:focus-visible {
   outline: 3px solid var(--green);
   outline-offset: 4px;
 }
@@ -441,8 +439,7 @@
 .resultHero,
 .resultEducation,
 .exerciseInner,
-.wellenaInner,
-.resultFooter {
+.wellenaInner {
   width: min(1180px, calc(100% - 48px));
   margin-inline: auto;
 }
@@ -624,15 +621,8 @@
 }
 
 .sectionHeading {
-  display: grid;
-  grid-template-columns: minmax(0, 0.55fr) minmax(0, 1fr);
-  gap: 40px;
-  align-items: end;
+  max-width: 760px;
   margin-bottom: 56px;
-}
-
-.sectionHeading .sectionEyebrow {
-  margin-bottom: 8px;
 }
 
 .sectionHeading h2,
@@ -659,13 +649,18 @@
   border-left: 1px solid rgba(63, 94, 90, 0.2);
 }
 
-.educationNumber {
-  display: block;
+.educationIcon {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  place-items: center;
   margin-bottom: 30px;
-  color: var(--camel);
+  border: 1px solid rgba(193, 152, 149, 0.56);
+  border-radius: 50%;
+  color: var(--rose);
   font-family: var(--font-fraunces), Fraunces, Georgia, serif;
-  font-size: 3.6rem;
-  font-weight: 560;
+  font-size: 2rem;
+  font-weight: 500;
   line-height: 1;
 }
 
@@ -761,6 +756,10 @@
 }
 
 .wellenaInner {
+  display: block;
+}
+
+.wellenaLead {
   display: grid;
   grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
   gap: clamp(48px, 7vw, 92px);
@@ -778,23 +777,6 @@
 .wellenaVisual img {
   object-fit: cover;
   object-position: 55% center;
-}
-
-.wellenaVisual p {
-  position: absolute;
-  right: 18px;
-  bottom: 18px;
-  left: 18px;
-  margin: 0;
-  padding: 12px 15px;
-  background: rgba(38, 59, 56, 0.9);
-  color: var(--cream);
-  font-size: 0.7rem;
-  font-weight: 720;
-  letter-spacing: 0.13em;
-  line-height: 1.4;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .wellenaLabel {
@@ -828,9 +810,11 @@
 }
 
 .wellenaDetails {
-  margin-top: 42px;
-  padding-top: 35px;
+  max-width: 880px;
+  margin: clamp(58px, 7vw, 88px) auto 0;
+  padding-top: clamp(40px, 5vw, 58px);
   border-top: 1px solid rgba(247, 243, 238, 0.18);
+  text-align: center;
 }
 
 .wellenaDetails h3 {
@@ -841,10 +825,12 @@
 
 .wellenaList {
   display: grid;
+  width: min(720px, 100%);
   gap: 14px;
-  margin: 25px 0 0;
+  margin: 25px auto 0;
   padding: 0;
   list-style: none;
+  text-align: left;
 }
 
 .wellenaList li {
@@ -865,16 +851,17 @@
 }
 
 .wellenaPurpose {
-  margin: 31px 0 0;
-  padding-left: 20px;
-  border-left: 2px solid var(--camel);
+  max-width: 760px;
+  margin: 34px auto 0;
+  padding-top: 25px;
+  border-top: 1px solid rgba(191, 161, 129, 0.48);
   color: var(--cream);
   font-size: 0.94rem;
   line-height: 1.72;
 }
 
 .wellenaCta {
-  width: 100%;
+  width: auto;
   margin-top: 32px;
   border-color: var(--cream);
   background: var(--cream);
@@ -892,15 +879,6 @@
   font-size: 0.72rem;
   line-height: 1.5;
   text-align: center;
-}
-
-.resultFooter {
-  padding: 34px 0 58px;
-  text-align: center;
-}
-
-.resultFooter .restartButton {
-  margin: 0;
 }
 
 @media (max-width: 960px) {
@@ -926,17 +904,12 @@
 
   .resultHeroGrid,
   .exerciseHeader,
-  .wellenaInner {
+  .wellenaLead {
     grid-template-columns: 1fr;
   }
 
   .resultGaugePanel {
     width: min(420px, 100%);
-  }
-
-  .sectionHeading {
-    grid-template-columns: 1fr;
-    gap: 14px;
   }
 
   .wellenaVisual {
@@ -953,8 +926,7 @@
   .resultHero,
   .resultEducation,
   .exerciseInner,
-  .wellenaInner,
-  .resultFooter {
+  .wellenaInner {
     width: min(100% - 32px, 1180px);
   }
 
@@ -1149,9 +1121,11 @@
     border-left: 0;
   }
 
-  .educationNumber {
+  .educationIcon {
+    width: 52px;
+    height: 52px;
     margin-bottom: 20px;
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
 
   .educationCard h3 {
@@ -1204,20 +1178,13 @@
     padding: 67px 0;
   }
 
-  .wellenaInner {
+  .wellenaLead {
     gap: 38px;
   }
 
   .wellenaVisual {
     border-radius: 18px;
     aspect-ratio: 4 / 3;
-  }
-
-  .wellenaVisual p {
-    right: 12px;
-    bottom: 12px;
-    left: 12px;
-    font-size: 0.61rem;
   }
 
   .wellenaCopy h2 {
@@ -1236,8 +1203,8 @@
   }
 
   .wellenaDetails {
-    margin-top: 32px;
-    padding-top: 28px;
+    margin-top: 48px;
+    padding-top: 34px;
   }
 
   .wellenaList {
@@ -1252,11 +1219,8 @@
   }
 
   .wellenaCta {
+    width: 100%;
     margin-top: 27px;
-  }
-
-  .resultFooter {
-    padding: 28px 0 42px;
   }
 }
 
