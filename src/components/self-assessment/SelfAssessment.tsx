@@ -203,7 +203,7 @@ export function SelfAssessment() {
 
   const submitEmail = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!hasCompleteAnswers(answers)) return;
+    if (!hasCompleteAnswers(answers) || !marketingConsent) return;
 
     setIsSubmitting(true);
     await new Promise((resolve) => setTimeout(resolve, 450));
@@ -363,20 +363,32 @@ export function SelfAssessment() {
                       placeholder="twoj@email.pl"
                     />
 
-                    <label className={styles.consent}>
+                    <div className={styles.consent}>
                       <input
+                        id="marketing-consent"
+                        name="marketingConsent"
                         type="checkbox"
+                        required
                         checked={marketingConsent}
                         onChange={(event) =>
                           setMarketingConsent(event.target.checked)
                         }
                       />
-                      <span>
-                        Chcę otrzymywać od Pracowni Życia treści o pewności
-                        siebie i informacje o programie Wellena. Zgoda jest
-                        opcjonalna i mogę ją wycofać w każdej chwili.
-                      </span>
-                    </label>
+                      <label htmlFor="marketing-consent">
+                        Wyrażam zgodę na otrzymywanie od Pracowni Życia drogą
+                        e-mail treści o pewności siebie oraz informacji
+                        marketingowych o programie Wellena. Zgoda jest wymagana,
+                        aby otrzymać wynik testu. Mogę ją wycofać w każdej chwili.{" "}
+                        <a
+                          href="https://pracowniazycia.pl/polityka-prywatnosci-bezpieczenstwa-i-cookies/"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Polityka prywatności
+                        </a>
+                        .
+                      </label>
+                    </div>
 
                     <button
                       type="submit"
@@ -386,17 +398,6 @@ export function SelfAssessment() {
                       {isSubmitting ? "Przygotowuję wynik…" : "Pokaż mój wynik"}
                     </button>
 
-                    <p className={styles.privacyNote}>
-                      Informacje o przetwarzaniu danych znajdziesz w{" "}
-                      <a
-                        href="https://pracowniazycia.pl/polityka-prywatnosci-bezpieczenstwa-i-cookies/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        polityce prywatności
-                      </a>
-                      .
-                    </p>
                   </form>
 
                   <button

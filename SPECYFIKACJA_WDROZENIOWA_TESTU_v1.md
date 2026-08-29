@@ -52,7 +52,7 @@ W razie rozbieżności obowiązuje następująca kolejność:
 - numer pytania i pasek postępu;
 - lokalne zachowanie odpowiedzi w przeglądarce;
 - formularz e-mail po ostatnim pytaniu;
-- niezależna zgoda marketingowa i link do polityki prywatności;
+- obowiązkowa zgoda marketingowa z linkiem do polityki prywatności;
 - obliczenie wyniku;
 - ekran wyniku z neutralnym wskaźnikiem kołowym;
 - mini-edukacja, ćwiczenie i CTA do Welleny;
@@ -112,10 +112,10 @@ Formularz zawiera:
 - wymagane pole e-mail;
 - link do polityki prywatności;
 - informację, do czego adres zostanie użyty;
-- osobny, domyślnie niezaznaczony checkbox zgody marketingowej;
+- osobny, domyślnie niezaznaczony i wymagany checkbox zgody marketingowej;
 - przycisk „Pokaż mój wynik”.
 
-Dokładne brzmienie informacji i zgody musi zostać zatwierdzone przed publikacją. Zgoda marketingowa nie steruje możliwością zobaczenia wyniku: brak zgody oznacza brak zapisu do komunikacji marketingowej, ale nie blokuje wyniku ani wiadomości zawierającej zamówioną kopię wyniku.
+Dokładne brzmienie informacji i zgody musi zostać zatwierdzone przed publikacją. Zgodnie z decyzją produktową zgoda marketingowa jest wymagana do wysłania i pokazania wyniku. Checkbox pozostaje domyślnie niezaznaczony, a w jego treści znajduje się link do polityki prywatności oraz informacja o możliwości wycofania zgody. Rozwiązanie wymaga weryfikacji prawnej przed publikacją ze względu na wymóg dobrowolności zgody.
 
 ### 5.4. Wynik
 
@@ -228,7 +228,7 @@ Nie wysyłamy ani nie zapisujemy pojedynczych odpowiedzi.
 
 - W MVP nie tworzymy własnej bazy danych.
 - Wynik jest używany do wygenerowania ekranu i wiadomości e-mail, a następnie nie jest trwale zapisywany przez aplikację.
-- Do narzędzia newsletterowego trafia e-mail tylko wtedy, gdy użytkowniczka zaznaczy zgodę marketingową.
+- Do narzędzia newsletterowego trafia e-mail po zaznaczeniu wymaganej zgody marketingowej.
 - Do narzędzia newsletterowego nie przekazujemy wyniku, jeśli nie jest to konieczne do zatwierdzonej automatyzacji.
 - Należy sprawdzić okres przechowywania treści i logów po stronie wybranego dostawcy poczty.
 
@@ -365,8 +365,8 @@ Supabase należy rozważyć później, jeśli pojawi się przynajmniej jedna z p
 
 Potrzebne są dwie funkcje, nawet jeśli obsłuży je jeden dostawca:
 
-1. wysłanie transakcyjnej kopii wyniku;
-2. zapis do listy/sekwencji marketingowej wyłącznie przy zaznaczonej zgodzie.
+1. wysłanie kopii wyniku;
+2. zapis do listy/sekwencji marketingowej po zaznaczeniu wymaganej zgody.
 
 Możliwe warianty:
 
@@ -457,7 +457,7 @@ Sekrety nie mogą być commitowane do Git ani udostępniane w kodzie przeglądar
 - test powrotu i zmiany odpowiedzi;
 - test zachowania stanu po odświeżeniu;
 - test formularza e-mail;
-- test braku zapisu marketingowego bez zgody;
+- test zablokowania wysłania formularza bez zgody marketingowej;
 - test pojedynczej wysyłki przy ponowieniu żądania;
 - test najważniejszego przebiegu w przeglądarce.
 
