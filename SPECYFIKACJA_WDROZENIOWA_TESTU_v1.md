@@ -119,18 +119,20 @@ Dokładne brzmienie informacji i zgody musi zostać zatwierdzone przed publikacj
 
 ### 5.4. Wynik
 
-Po poprawnym przyjęciu formularza na tej samej stronie pojawiają się kolejno:
+Po poprawnym przyjęciu formularza dotychczasowy układ testu zostaje zastąpiony pełnoekranowym ekranem wyniku. Ekran wygląda jak odrębna strona, ale pozostaje w tej samej karcie przeglądarki i pod tym samym adresem. Pojawiają się kolejno:
 
 1. nagłówek `Twój wynik to {wynik} na 40`;
 2. neutralny wskaźnik kołowy;
 3. informacja, że jest to zapis dzisiejszych odpowiedzi, a nie ocena osoby;
 4. zastrzeżenie, że test nie jest diagnozą;
-5. mini-edukacja;
-6. ćwiczenie „Potrafię / Mogę”;
-7. prezentacja Welleny jako 30-dniowego programu Pracowni Życia;
+5. mini-edukacja w dwóch odrębnych sekcjach;
+6. trzyetapowe ćwiczenie „Potrafię / Mogę”;
+7. prezentacja Welleny jako 30-dniowego programu Pracowni Życia z fotografią pokazującą przygotowanie do działania;
 8. CTA `Zobacz, jak działa Wellena` prowadzące do `wellena.pl`.
 
 Treści edukacyjne i ćwiczenie są wspólne dla wszystkich wyników. W MVP nie tworzymy różnych interpretacji na podstawie progów punktowych.
+
+Po odświeżeniu ekran wyniku pozostaje widoczny w bieżącej sesji przeglądarki. Przycisk „Wypełnij test ponownie” usuwa wynik sesyjny i rozpoczyna nowe wypełnienie.
 
 ## 6. Wskaźnik kołowy
 
@@ -210,6 +212,12 @@ Odpowiedzi są przechowywane tymczasowo w `localStorage` pod kluczem zawierając
 - są usuwane po poprawnym pokazaniu wyniku;
 - nie zawierają adresu e-mail;
 - nie są wysyłane do GA4 ani innego systemu analitycznego.
+
+Po ukończeniu testu wyłącznie wynik liczbowy i wersja testu są tymczasowo przechowywane w `sessionStorage`, aby odświeżenie strony nie usuwało ekranu wyniku. Zapis:
+
+- nie zawiera adresu e-mail ani pojedynczych odpowiedzi;
+- znika po zamknięciu karty lub wybraniu „Wypełnij test ponownie”;
+- nie jest umieszczany w adresie URL.
 
 ### Dane wysyłane do backendu
 

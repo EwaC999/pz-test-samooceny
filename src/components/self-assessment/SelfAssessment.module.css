@@ -45,9 +45,7 @@
 }
 
 .eyebrow,
-.cardEyebrow,
-.exerciseLabel,
-.wellenaLabel {
+.cardEyebrow {
   margin: 0 0 18px;
   color: var(--green);
   font-size: 0.75rem;
@@ -145,10 +143,6 @@
   border-radius: 28px;
   background: rgba(252, 250, 247, 0.92);
   box-shadow: var(--shadow);
-}
-
-.resultCard {
-  padding: clamp(30px, 4vw, 58px);
 }
 
 .progressHeader {
@@ -320,8 +314,7 @@
   text-align: center;
 }
 
-.emailView h2,
-.resultView > h2 {
+.emailView h2 {
   margin: 0;
   color: var(--graphite);
   font-family: var(--font-fraunces), Fraunces, Georgia, serif;
@@ -440,14 +433,105 @@
   margin-top: 20px;
 }
 
-.resultView {
+.resultMain {
+  width: 100%;
+  padding: 34px 0 0;
+}
+
+.resultHero,
+.resultEducation,
+.exerciseInner,
+.wellenaInner,
+.resultFooter {
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.resultHero {
+  padding: clamp(42px, 6vw, 78px);
+  border: 1px solid rgba(63, 94, 90, 0.18);
+  border-radius: 30px;
+  background: var(--cream-light);
+  box-shadow: var(--shadow);
+}
+
+.resultHeroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.68fr);
+  gap: clamp(48px, 7vw, 92px);
+  align-items: center;
+}
+
+.resultCopy {
+  position: relative;
+}
+
+.resultEyebrow,
+.sectionEyebrow {
+  margin: 0 0 18px;
+  color: var(--green);
+  font-size: 0.73rem;
+  font-weight: 750;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.resultCopy h1,
+.sectionHeading h2,
+.exerciseHeader h2,
+.wellenaCopy h2 {
+  margin: 0;
+  font-family: var(--font-fraunces), Fraunces, Georgia, serif;
+  font-weight: 610;
+  letter-spacing: -0.035em;
+}
+
+.resultCopy h1 {
+  max-width: 680px;
+  color: var(--graphite);
+  font-size: clamp(2.8rem, 5.2vw, 5rem);
+  line-height: 1.01;
+}
+
+.resultCopy h1:focus {
+  outline: none;
+}
+
+.resultCopy h1 span {
+  display: block;
+  margin-top: 7px;
+  color: var(--green);
+}
+
+.resultIntro {
+  max-width: 650px;
+  margin: 27px 0 0;
+  color: rgba(44, 42, 42, 0.74);
+  font-size: clamp(1rem, 1.35vw, 1.14rem);
+  line-height: 1.72;
+}
+
+.resultGaugePanel {
+  padding: 25px 24px 22px;
+  border: 1px solid rgba(191, 161, 129, 0.34);
+  background: rgba(191, 161, 129, 0.1);
   text-align: center;
+}
+
+.resultGaugePanel > p {
+  margin: 0;
+  color: rgba(44, 42, 42, 0.63);
+  font-size: 0.73rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .gauge {
   position: relative;
-  width: min(220px, 60vw);
-  margin: 32px auto 25px;
+  width: min(260px, 65vw);
+  margin: 0 auto 4px;
   aspect-ratio: 1;
 }
 
@@ -455,16 +539,16 @@
   display: block;
   width: 100%;
   height: 100%;
-  transform: rotate(-90deg);
+  transform: rotate(135deg);
 }
 
 .gaugeTrack {
-  stroke: rgba(63, 94, 90, 0.14);
+  stroke: rgba(63, 94, 90, 0.15);
 }
 
 .gaugeValue {
   stroke: var(--green);
-  transition: stroke-dashoffset 700ms ease-out;
+  transition: stroke-dasharray 700ms ease-out;
 }
 
 .gaugeLabel {
@@ -477,112 +561,346 @@
 .gaugeLabel strong {
   color: var(--green);
   font-family: var(--font-fraunces), Fraunces, Georgia, serif;
-  font-size: 3.45rem;
-  font-weight: 650;
-  letter-spacing: -0.04em;
-  line-height: 0.95;
+  font-size: 4.1rem;
+  font-weight: 640;
+  letter-spacing: -0.05em;
+  line-height: 0.92;
 }
 
 .gaugeLabel span {
-  margin-top: 4px;
+  margin-top: 7px;
   color: rgba(44, 42, 42, 0.59);
-  font-size: 0.75rem;
-  font-weight: 650;
-  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  font-weight: 680;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
-.resultIntro {
-  max-width: 540px;
-  margin: 0 auto;
-  color: rgba(44, 42, 42, 0.74);
-  font-size: 0.97rem;
+.gaugeScale {
+  position: absolute;
+  right: 20%;
+  bottom: 12%;
+  left: 20%;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(44, 42, 42, 0.55);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.resultDisclaimer {
+  display: grid;
+  grid-template-columns: 31px minmax(0, 1fr);
+  gap: 15px;
+  align-items: start;
+  margin-top: 46px;
+  padding-top: 27px;
+  border-top: 1px solid rgba(63, 94, 90, 0.2);
+}
+
+.resultDisclaimer p {
+  max-width: 920px;
+  margin: 0;
+  color: rgba(44, 42, 42, 0.64);
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+
+.resultInfoMark {
+  display: grid;
+  width: 27px;
+  height: 27px;
+  place-items: center;
+  border: 1px solid var(--green);
+  border-radius: 50%;
+  color: var(--green);
+  font-family: Georgia, serif;
+  font-size: 0.83rem;
+  font-style: italic;
+}
+
+.resultEducation {
+  padding: clamp(88px, 10vw, 132px) 0;
+}
+
+.sectionHeading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.55fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 56px;
+}
+
+.sectionHeading .sectionEyebrow {
+  margin-bottom: 8px;
+}
+
+.sectionHeading h2,
+.exerciseHeader h2 {
+  color: var(--green);
+  font-size: clamp(2.3rem, 4.2vw, 4rem);
+  line-height: 1.05;
+}
+
+.educationGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid rgba(63, 94, 90, 0.25);
+}
+
+.educationCard {
+  position: relative;
+  padding: 40px clamp(0px, 4vw, 54px) 0 0;
+}
+
+.educationCard + .educationCard {
+  padding-right: 0;
+  padding-left: clamp(28px, 4vw, 54px);
+  border-left: 1px solid rgba(63, 94, 90, 0.2);
+}
+
+.educationNumber {
+  display: block;
+  margin-bottom: 30px;
+  color: var(--camel);
+  font-family: var(--font-fraunces), Fraunces, Georgia, serif;
+  font-size: 3.6rem;
+  font-weight: 560;
+  line-height: 1;
+}
+
+.educationCard h3,
+.exerciseStep h3,
+.wellenaDetails h3 {
+  margin: 0;
+  color: var(--graphite);
+  font-family: var(--font-fraunces), Fraunces, Georgia, serif;
+  font-weight: 610;
+  letter-spacing: -0.022em;
+}
+
+.educationCard h3 {
+  max-width: 470px;
+  font-size: clamp(1.55rem, 2.2vw, 2.05rem);
+  line-height: 1.19;
+}
+
+.educationCard p {
+  margin: 22px 0 0;
+  color: rgba(44, 42, 42, 0.73);
+  font-size: 0.94rem;
+  line-height: 1.76;
+}
+
+.exerciseSection {
+  padding: clamp(82px, 10vw, 126px) 0;
+  border-block: 1px solid rgba(191, 161, 129, 0.26);
+  background: rgba(191, 161, 129, 0.1);
+}
+
+.exerciseHeader {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.7fr);
+  gap: clamp(44px, 7vw, 96px);
+  align-items: end;
+  margin-bottom: 62px;
+}
+
+.exerciseHeader > p {
+  margin: 0 0 5px;
+  color: rgba(44, 42, 42, 0.72);
+  font-size: 1rem;
   line-height: 1.7;
 }
 
-.resultSection {
-  margin-top: 42px;
-  padding-top: 36px;
-  border-top: 1px solid rgba(63, 94, 90, 0.18);
-  text-align: left;
-}
-
-.resultSection h3,
-.exercise h3,
-.wellenaBox h3 {
-  margin: 0 0 13px;
-  font-family: var(--font-fraunces), Fraunces, Georgia, serif;
-  font-size: 1.55rem;
-  font-weight: 610;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-}
-
-.resultSection p,
-.exercise p,
-.wellenaBox p {
+.exerciseSteps {
+  display: grid;
   margin: 0;
-  color: rgba(44, 42, 42, 0.75);
-  font-size: 0.89rem;
-  line-height: 1.72;
+  padding: 0;
+  border-top: 1px solid rgba(63, 94, 90, 0.22);
+  list-style: none;
 }
 
-.exercise {
-  margin-top: 26px;
-  padding: 27px 28px;
-  border: 1px solid rgba(191, 161, 129, 0.38);
-  border-radius: 18px;
-  background: rgba(191, 161, 129, 0.12);
-  text-align: left;
+.exerciseStep {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 54px);
+  padding: 38px 0;
+  border-bottom: 1px solid rgba(63, 94, 90, 0.19);
 }
 
-.exerciseLabel {
-  margin-bottom: 10px !important;
-  color: var(--graphite) !important;
-  font-size: 0.66rem !important;
-  font-weight: 720 !important;
-  letter-spacing: 0.14em;
+.stepNumber {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  border: 1px solid var(--green);
+  border-radius: 50%;
+  color: var(--green);
+  font-family: var(--font-fraunces), Fraunces, Georgia, serif;
+  font-size: 1.4rem;
+}
+
+.exerciseStep h3 {
+  font-size: clamp(1.4rem, 2.1vw, 1.9rem);
+  line-height: 1.22;
+}
+
+.exerciseStep p {
+  max-width: 830px;
+  margin: 17px 0 0;
+  color: rgba(44, 42, 42, 0.73);
+  font-size: 0.94rem;
+  line-height: 1.76;
+}
+
+.wellenaSection {
+  padding: clamp(84px, 10vw, 128px) 0;
+  background: var(--green-deep);
+  color: var(--cream);
+}
+
+.wellenaInner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(48px, 7vw, 92px);
+  align-items: start;
+}
+
+.wellenaVisual {
+  position: sticky;
+  top: 28px;
+  min-height: 650px;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.wellenaVisual img {
+  object-fit: cover;
+  object-position: 55% center;
+}
+
+.wellenaVisual p {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  margin: 0;
+  padding: 12px 15px;
+  background: rgba(38, 59, 56, 0.9);
+  color: var(--cream);
+  font-size: 0.7rem;
+  font-weight: 720;
+  letter-spacing: 0.13em;
+  line-height: 1.4;
+  text-align: center;
   text-transform: uppercase;
 }
 
-.wellenaBox {
-  margin-top: 26px;
-  padding: 31px;
-  border-radius: 19px;
-  background: var(--green-deep);
-  color: var(--cream);
-  text-align: left;
-}
-
 .wellenaLabel {
-  margin-bottom: 12px !important;
-  color: var(--camel) !important;
-  font-size: 0.66rem !important;
+  margin: 0 0 20px;
+  color: var(--camel);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
-.wellenaBox h3 {
+.wellenaCopy h2 {
   color: var(--cream);
-  font-size: 1.75rem;
+  font-size: clamp(2.45rem, 4.3vw, 4rem);
+  line-height: 1.07;
 }
 
-.wellenaBox p {
-  color: rgba(247, 243, 238, 0.82);
+.wellenaCopy > p:not(.wellenaLabel) {
+  max-width: 650px;
+  margin: 22px 0 0;
+  color: rgba(247, 243, 238, 0.78);
+  font-size: 0.96rem;
+  line-height: 1.72;
 }
 
-.wellenaBox .primaryButton {
+.wellenaCopy .wellenaSummary {
+  margin-top: 32px;
+  color: var(--cream);
+  font-size: 1.08rem;
+}
+
+.wellenaDetails {
+  margin-top: 42px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(247, 243, 238, 0.18);
+}
+
+.wellenaDetails h3 {
+  color: var(--cream);
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.wellenaList {
+  display: grid;
+  gap: 14px;
+  margin: 25px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wellenaList li {
+  position: relative;
+  padding-left: 31px;
+  color: rgba(247, 243, 238, 0.8);
+  font-size: 0.9rem;
+  line-height: 1.58;
+}
+
+.wellenaList li::before {
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+  color: var(--camel);
+  content: "—";
+  font-weight: 800;
+}
+
+.wellenaPurpose {
+  margin: 31px 0 0;
+  padding-left: 20px;
+  border-left: 2px solid var(--camel);
+  color: var(--cream);
+  font-size: 0.94rem;
+  line-height: 1.72;
+}
+
+.wellenaCta {
   width: 100%;
-  margin-top: 23px;
+  margin-top: 32px;
   border-color: var(--cream);
   background: var(--cream);
   color: var(--green-deep);
 }
 
-.wellenaBox .primaryButton:hover {
+.wellenaCta:hover {
+  border-color: #fff;
   background: #fff;
 }
 
-.restartButton {
-  margin-top: 23px;
+.wellenaMeta {
+  margin: 15px 0 0;
+  color: rgba(247, 243, 238, 0.57);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.resultFooter {
+  padding: 34px 0 58px;
+  text-align: center;
+}
+
+.resultFooter .restartButton {
+  margin: 0;
 }
 
 @media (max-width: 960px) {
@@ -605,11 +923,38 @@
     width: min(680px, 100%);
     margin: 0 auto;
   }
+
+  .resultHeroGrid,
+  .exerciseHeader,
+  .wellenaInner {
+    grid-template-columns: 1fr;
+  }
+
+  .resultGaugePanel {
+    width: min(420px, 100%);
+  }
+
+  .sectionHeading {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .wellenaVisual {
+    position: relative;
+    top: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
 }
 
 @media (max-width: 600px) {
   .header,
-  .main {
+  .main,
+  .resultHero,
+  .resultEducation,
+  .exerciseInner,
+  .wellenaInner,
+  .resultFooter {
     width: min(100% - 32px, 1180px);
   }
 
@@ -712,14 +1057,206 @@
     text-align: right;
   }
 
-  .emailView h2,
-  .resultView > h2 {
+  .emailView h2 {
     font-size: 2.3rem;
   }
 
-  .exercise,
-  .wellenaBox {
-    padding: 23px 20px;
+  .resultMain {
+    padding-top: 16px;
+  }
+
+  .resultHero {
+    padding: 34px 20px 27px;
+    border-radius: 22px;
+  }
+
+  .resultHeroGrid {
+    gap: 31px;
+  }
+
+  .resultEyebrow,
+  .sectionEyebrow,
+  .wellenaLabel {
+    margin-bottom: 13px;
+    font-size: 0.66rem;
+    letter-spacing: 0.13em;
+  }
+
+  .resultCopy h1 {
+    font-size: clamp(2.45rem, 12vw, 3.35rem);
+  }
+
+  .resultIntro {
+    margin-top: 19px;
+    font-size: 0.94rem;
+    line-height: 1.62;
+  }
+
+  .resultGaugePanel {
+    padding: 16px 14px 17px;
+  }
+
+  .gauge {
+    width: min(230px, 68vw);
+  }
+
+  .gaugeLabel strong {
+    font-size: 3.45rem;
+  }
+
+  .resultDisclaimer {
+    grid-template-columns: 25px minmax(0, 1fr);
+    gap: 11px;
+    margin-top: 31px;
+    padding-top: 21px;
+  }
+
+  .resultInfoMark {
+    width: 23px;
+    height: 23px;
+    font-size: 0.72rem;
+  }
+
+  .resultDisclaimer p {
+    font-size: 0.74rem;
+    line-height: 1.57;
+  }
+
+  .resultEducation {
+    padding: 70px 0 74px;
+  }
+
+  .sectionHeading {
+    margin-bottom: 37px;
+  }
+
+  .sectionHeading h2,
+  .exerciseHeader h2 {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+  }
+
+  .educationGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .educationCard {
+    padding: 29px 0 38px;
+  }
+
+  .educationCard + .educationCard {
+    padding: 36px 0 0;
+    border-top: 1px solid rgba(63, 94, 90, 0.2);
+    border-left: 0;
+  }
+
+  .educationNumber {
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+
+  .educationCard h3 {
+    font-size: 1.55rem;
+  }
+
+  .educationCard p {
+    margin-top: 16px;
+    font-size: 0.89rem;
+    line-height: 1.68;
+  }
+
+  .exerciseSection {
+    padding: 67px 0;
+  }
+
+  .exerciseHeader {
+    gap: 21px;
+    margin-bottom: 42px;
+  }
+
+  .exerciseHeader > p {
+    font-size: 0.92rem;
+    line-height: 1.63;
+  }
+
+  .exerciseStep {
+    grid-template-columns: 43px minmax(0, 1fr);
+    gap: 16px;
+    padding: 28px 0;
+  }
+
+  .stepNumber {
+    width: 39px;
+    height: 39px;
+    font-size: 1.1rem;
+  }
+
+  .exerciseStep h3 {
+    font-size: 1.36rem;
+  }
+
+  .exerciseStep p {
+    margin-top: 13px;
+    font-size: 0.88rem;
+    line-height: 1.67;
+  }
+
+  .wellenaSection {
+    padding: 67px 0;
+  }
+
+  .wellenaInner {
+    gap: 38px;
+  }
+
+  .wellenaVisual {
+    border-radius: 18px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .wellenaVisual p {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    font-size: 0.61rem;
+  }
+
+  .wellenaCopy h2 {
+    font-size: clamp(2.25rem, 10.5vw, 3.05rem);
+  }
+
+  .wellenaCopy > p:not(.wellenaLabel) {
+    margin-top: 18px;
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .wellenaCopy .wellenaSummary {
+    margin-top: 25px;
+    font-size: 1rem;
+  }
+
+  .wellenaDetails {
+    margin-top: 32px;
+    padding-top: 28px;
+  }
+
+  .wellenaList {
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .wellenaPurpose {
+    margin-top: 25px;
+    font-size: 0.89rem;
+    line-height: 1.65;
+  }
+
+  .wellenaCta {
+    margin-top: 27px;
+  }
+
+  .resultFooter {
+    padding: 28px 0 42px;
   }
 }
 
