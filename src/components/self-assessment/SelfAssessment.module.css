@@ -437,6 +437,7 @@
 }
 
 .resultHero,
+.resultBridge,
 .resultEducation,
 .exerciseInner,
 .wellenaInner {
@@ -616,6 +617,44 @@
   font-style: italic;
 }
 
+.resultBridge {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(32px, 5vw, 68px);
+  align-items: center;
+  margin-top: clamp(44px, 6vw, 72px);
+  padding: clamp(30px, 4vw, 46px) clamp(4px, 3vw, 34px);
+  border-block: 1px solid rgba(63, 94, 90, 0.2);
+}
+
+.resultBridgeCopy {
+  max-width: 760px;
+}
+
+.resultBridge h2 {
+  margin: 0;
+  color: var(--green);
+  font-family: var(--font-fraunces), Fraunces, Georgia, serif;
+  font-size: clamp(1.75rem, 2.8vw, 2.5rem);
+  font-weight: 610;
+  letter-spacing: -0.028em;
+  line-height: 1.12;
+}
+
+.resultBridge p {
+  margin: 17px 0 0;
+  color: rgba(44, 42, 42, 0.72);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.resultBridgeCta {
+  min-height: 60px;
+  padding-inline: 28px;
+  font-size: 1.04rem;
+  white-space: nowrap;
+}
+
 .resultEducation {
   padding: clamp(88px, 10vw, 132px) 0;
 }
@@ -662,6 +701,33 @@
   font-size: 2rem;
   font-weight: 500;
   line-height: 1;
+}
+
+.educationStepsIcon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+  padding-bottom: 16px;
+}
+
+.educationStepsIcon span {
+  display: block;
+  width: 7px;
+  border-radius: 2px 2px 0 0;
+  background: currentColor;
+}
+
+.educationStepsIcon span:nth-child(1) {
+  height: 9px;
+}
+
+.educationStepsIcon span:nth-child(2) {
+  height: 16px;
+}
+
+.educationStepsIcon span:nth-child(3) {
+  height: 23px;
 }
 
 .educationCard h3,
@@ -779,13 +845,22 @@
   object-position: 55% center;
 }
 
-.wellenaLabel {
-  margin: 0 0 20px;
+.wellenaLogoPlaceholder {
+  display: grid;
+  width: max-content;
+  min-width: 190px;
+  min-height: 68px;
+  place-items: center;
+  margin: 0 0 clamp(35px, 5vw, 64px) auto;
+  padding: 14px 22px;
+  border: 1px dashed rgba(191, 161, 129, 0.72);
+  border-radius: 10px;
   color: var(--camel);
   font-size: 0.72rem;
-  font-weight: 750;
-  letter-spacing: 0.16em;
+  font-weight: 650;
+  letter-spacing: 0.1em;
   line-height: 1.4;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -795,18 +870,18 @@
   line-height: 1.07;
 }
 
-.wellenaCopy > p:not(.wellenaLabel) {
+.wellenaCopy > p {
   max-width: 650px;
   margin: 22px 0 0;
   color: rgba(247, 243, 238, 0.78);
-  font-size: 0.96rem;
-  line-height: 1.72;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .wellenaCopy .wellenaSummary {
-  margin-top: 32px;
+  margin-top: 29px;
   color: var(--cream);
-  font-size: 1.08rem;
+  font-size: 1rem;
 }
 
 .wellenaDetails {
@@ -837,8 +912,8 @@
   position: relative;
   padding-left: 31px;
   color: rgba(247, 243, 238, 0.8);
-  font-size: 0.9rem;
-  line-height: 1.58;
+  font-size: 1rem;
+  line-height: 1.72;
 }
 
 .wellenaList li::before {
@@ -856,29 +931,24 @@
   padding-top: 25px;
   border-top: 1px solid rgba(191, 161, 129, 0.48);
   color: var(--cream);
-  font-size: 0.94rem;
-  line-height: 1.72;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .wellenaCta {
   width: auto;
+  min-height: 62px;
   margin-top: 32px;
+  padding: 17px 32px;
   border-color: var(--cream);
   background: var(--cream);
   color: var(--green-deep);
+  font-size: 1.04rem;
 }
 
 .wellenaCta:hover {
   border-color: #fff;
   background: #fff;
-}
-
-.wellenaMeta {
-  margin: 15px 0 0;
-  color: rgba(247, 243, 238, 0.57);
-  font-size: 0.72rem;
-  line-height: 1.5;
-  text-align: center;
 }
 
 @media (max-width: 960px) {
@@ -908,6 +978,14 @@
     grid-template-columns: 1fr;
   }
 
+  .resultBridge {
+    grid-template-columns: 1fr;
+  }
+
+  .resultBridgeCta {
+    justify-self: start;
+  }
+
   .resultGaugePanel {
     width: min(420px, 100%);
   }
@@ -924,6 +1002,7 @@
   .header,
   .main,
   .resultHero,
+  .resultBridge,
   .resultEducation,
   .exerciseInner,
   .wellenaInner {
@@ -1047,8 +1126,7 @@
   }
 
   .resultEyebrow,
-  .sectionEyebrow,
-  .wellenaLabel {
+  .sectionEyebrow {
     margin-bottom: 13px;
     font-size: 0.66rem;
     letter-spacing: 0.13em;
@@ -1092,6 +1170,30 @@
   .resultDisclaimer p {
     font-size: 0.74rem;
     line-height: 1.57;
+  }
+
+  .resultBridge {
+    gap: 24px;
+    margin-top: 34px;
+    padding: 28px 0;
+  }
+
+  .resultBridge h2 {
+    font-size: 1.8rem;
+  }
+
+  .resultBridge p {
+    margin-top: 14px;
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .resultBridgeCta {
+    width: 100%;
+    min-height: 58px;
+    padding-inline: 18px;
+    font-size: 0.98rem;
+    white-space: normal;
   }
 
   .resultEducation {
@@ -1187,14 +1289,18 @@
     aspect-ratio: 4 / 3;
   }
 
+  .wellenaLogoPlaceholder {
+    margin: 0 0 29px;
+  }
+
   .wellenaCopy h2 {
     font-size: clamp(2.25rem, 10.5vw, 3.05rem);
   }
 
-  .wellenaCopy > p:not(.wellenaLabel) {
+  .wellenaCopy > p {
     margin-top: 18px;
-    font-size: 0.9rem;
-    line-height: 1.65;
+    font-size: 1rem;
+    line-height: 1.72;
   }
 
   .wellenaCopy .wellenaSummary {
@@ -1214,8 +1320,8 @@
 
   .wellenaPurpose {
     margin-top: 25px;
-    font-size: 0.89rem;
-    line-height: 1.65;
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
   .wellenaCta {

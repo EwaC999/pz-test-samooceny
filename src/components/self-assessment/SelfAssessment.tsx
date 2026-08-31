@@ -132,6 +132,25 @@ function ResultScreen({ score }: { score: number }) {
         </div>
       </section>
 
+      <section className={styles.resultBridge} aria-labelledby="bridge-title">
+        <div className={styles.resultBridgeCopy}>
+          <h2 id="bridge-title">
+            Już wiesz, od czego zaczynasz. Teraz możesz pójść dalej.
+          </h2>
+          <p>
+            Przez kolejne 30 dni Wellena pomoże Ci zobaczyć, na czym możesz się
+            oprzeć, zrozumieć, co Cię zatrzymuje, i przełożyć wnioski na małe,
+            konkretne działania w codziennym życiu.
+          </p>
+        </div>
+        <a
+          className={[styles.primaryButton, styles.resultBridgeCta].join(" ")}
+          href="https://wellena.pl"
+        >
+          Zrób kolejny krok z Welleną →
+        </a>
+      </section>
+
       <section
         className={styles.resultEducation}
         aria-labelledby="education-title"
@@ -145,37 +164,34 @@ function ResultScreen({ score }: { score: number }) {
             <span className={styles.educationIcon} aria-hidden="true">
               ♡
             </span>
-            <h3>Pewność siebie i poczucie własnej wartości</h3>
+            <h3>Pewność siebie to nie to samo co poczucie własnej wartości</h3>
             <p>
-              Pewność siebie jest zewnętrznym objawem wewnętrznego poczucia
-              własnej wartości i skuteczności. Poczucie własnej wartości sięga
-              głębiej: oznacza przekonanie, że masz nienaruszalną wartość i
-              zasługujesz na szacunek także wtedy, gdy popełniasz błąd, czegoś
-              nie potrafisz lub przeżywasz trudniejszy moment.
+              Pewność siebie mówi: „Poradzę sobie w tej sytuacji”. Poczucie
+              własnej wartości mówi: „Nadal zasługuję na szacunek, nawet jeśli
+              sobie nie poradzę”. Dlatego warto pracować nie tylko nad
+              odważniejszym działaniem, lecz także nad tym, jak traktujesz siebie
+              niezależnie od wyniku.
             </p>
           </article>
 
           <article className={styles.educationCard}>
-            <span className={styles.educationIcon} aria-hidden="true">
-              ↻
+            <span
+              className={[styles.educationIcon, styles.educationStepsIcon].join(
+                " ",
+              )}
+              aria-hidden="true"
+            >
+              <span />
+              <span />
+              <span />
             </span>
             <h3>Poczucie własnej wartości nie jest ustalone raz na zawsze</h3>
             <p>
-              Na sposób, w jaki dziś myślisz o sobie, wpłynęły między innymi
-              doświadczenia z dzieciństwa, pierwsze relacje oraz komunikaty,
-              które otrzymywałaś od ważnych osób. Jako dziecko nie miałaś
-              możliwości spojrzenia na nie z dorosłej perspektywy. Nie oznacza
-              to jednak, że to, co wyniosłaś z dzieciństwa, musi na zawsze
-              określać Twój stosunek do siebie.
-            </p>
-            <p>
-              Jako dorosła osoba możesz przejąć odpowiedzialność za swoje życie
-              i wzmacniać swoją pewność siebie poprzez budowanie zdrowego
-              poczucia własnej wartości. Wzmacnianie poczucia własnej wartości
-              nie polega na przekonywaniu siebie, że zawsze jesteś doskonała.
-              Chodzi o rozwijanie zaufania do własnego umysłu i możliwości oraz
-              traktowanie siebie jako osoby, której potrzeby, granice i cele
-              mają znaczenie.
+              Na sposób, w jaki dziś myślisz o sobie, wpłynęły doświadczenia,
+              relacje i komunikaty otrzymywane od innych. Nie oznacza to jednak,
+              że Twój stosunek do siebie został ustalony na zawsze. Jako dorosła
+              osoba możesz rozwijać zaufanie do własnego myślenia i działania
+              oraz traktować swoje potrzeby, granice i cele jako ważne.
             </p>
           </article>
         </div>
@@ -191,8 +207,9 @@ function ResultScreen({ score }: { score: number }) {
               <h2 id="exercise-title">Potrafię / Mogę</h2>
             </div>
             <p>
-              Kiedy stoisz przed nowym wyzwaniem, uwaga łatwo skupia się na
-              ryzyku i Twoich brakach. Wtedy zrób to ćwiczenie.
+              Gdy stoisz przed nowym wyzwaniem, łatwo skupić się na ryzyku i
+              własnych brakach. To ćwiczenie pomoże Ci przypomnieć sobie, na czym
+              możesz się oprzeć.
             </p>
           </div>
 
@@ -204,16 +221,9 @@ function ResultScreen({ score }: { score: number }) {
               <div>
                 <h3>Wybierz jedno wydarzenie albo sytuację</h3>
                 <p>
-                  Przypomnij sobie jedną rzecz, która Ci się udała. Może to być
-                  coś niewielkiego: ugotowanie dobrego obiadu, napisanie trudnej
-                  wiadomości albo załatwienie sprawy. Może to być również
-                  większe osiągnięcie: zdanie prawa jazdy lub matury, uzyskanie
-                  dyplomu, znalezienie pracy, urządzenie mieszkania albo
-                  doprowadzenie dużego projektu do końca.
-                </p>
-                <p>
-                  Nie musi to być nic wielkiego. Ważne, abyś czuła wtedy swoją
-                  sprawczość.
+                  Przypomnij sobie sytuację, w której poradziłaś sobie z czymś
+                  ważnym lub trudnym. Nie musi to być wielkie osiągnięcie — ważne,
+                  że poczułaś wtedy swoją sprawczość.
                 </p>
               </div>
             </li>
@@ -225,13 +235,8 @@ function ResultScreen({ score }: { score: number }) {
               <div>
                 <h3>Przypomnij sobie</h3>
                 <p>
-                  Gdzie byłaś? Co widziałaś wokół siebie? Co czułaś — radość,
-                  dumę, a może satysfakcję? Jaka umiejętność, decyzja, cecha albo
-                  sposób działania Ci pomogły?
-                </p>
-                <p>
-                  Nazwij choć jedną swoją cechę, dzięki której udało Ci się tego
-                  dokonać.
+                  Co wtedy zrobiłaś i co Ci pomogło? Nazwij jedną umiejętność,
+                  decyzję albo cechę, na której się oparłaś.
                 </p>
               </div>
             </li>
@@ -242,13 +247,12 @@ function ResultScreen({ score }: { score: number }) {
               </span>
               <div>
                 <h3>
-                  Wracaj do tego wspomnienia zawsze, kiedy stoisz przed nowym
-                  wyzwaniem
+                  Wróć do tego wspomnienia przed nowym wyzwaniem
                 </h3>
                 <p>
-                  Nie po to, by przekonywać siebie, że kolejna rzecz na pewno się
-                  uda. Po to, żeby obok obaw zobaczyć również fakty o tym, co już
-                  potrafisz i z czego możesz skorzystać.
+                  Nie po to, żeby przekonywać siebie, że na pewno się uda. Po to,
+                  żeby obok obaw zobaczyć również fakty o tym, co już potrafisz i
+                  z czego możesz skorzystać.
                 </p>
               </div>
             </li>
@@ -269,23 +273,18 @@ function ResultScreen({ score }: { score: number }) {
             </div>
 
             <div className={styles.wellenaCopy}>
-              <p className={styles.wellenaLabel}>
-                Wellena — program Pracowni Życia
-              </p>
+              <div className={styles.wellenaLogoPlaceholder}>
+                Miejsce na logo Welleny
+              </div>
               <h2 id="wellena-title">
                 Nie zawsze brakuje Ci kompetencji. Czasem najbardziej zatrzymuje
                 Cię brak zaufania do siebie.
               </h2>
               <p className={styles.wellenaSummary}>
-                <strong>
-                  Wellena to 30-dniowy indywidualny program budowania pewności
-                  siebie z osobistą przewodniczką AI.
-                </strong>
-              </p>
-              <p>
-                Pomaga Ci lepiej poznać siebie, zobaczyć realne podstawy zaufania
-                do siebie i przekładać wnioski na małe działania w codziennym
-                życiu.
+                Wellena to 30-dniowy indywidualny program budowania pewności
+                siebie z osobistą przewodniczką AI. Pomaga Ci lepiej poznać
+                siebie, znaleźć realne podstawy zaufania do siebie i przełożyć je
+                na działanie.
               </p>
             </div>
           </div>
@@ -293,25 +292,19 @@ function ResultScreen({ score }: { score: number }) {
           <div className={styles.wellenaDetails}>
             <h3>Podczas 30-dniowego programu:</h3>
             <ul className={styles.wellenaList}>
-              <li>lepiej poznajesz swoje mocne strony, wartości i zasoby,</li>
+              <li>lepiej poznasz swoje mocne strony, wartości i zasoby,</li>
               <li>
-                przyjrzysz się przekonaniom i reakcjom, które zatrzymują Cię
-                przed działaniem,
+                przyjrzysz się przekonaniom i reakcjom, które Cię zatrzymują,
               </li>
-              <li>nauczysz się dbać o swoje potrzeby i granice,</li>
+              <li>nauczysz się lepiej dbać o swoje potrzeby i granice,</li>
               <li>
-                zobaczysz, jak przełożyć wnioski na małe działania w realnym
-                życiu,
-              </li>
-              <li>
-                będziesz budować zaufanie do siebie poprzez własne doświadczenia
-                i małe kroki.
+                przełożysz wnioski na małe działania budujące zaufanie do siebie.
               </li>
             </ul>
             <p className={styles.wellenaPurpose}>
-              Celem nie jest stworzenie „nowej Ciebie”. Chodzi o to, żebyś
-              wyraźniej zobaczyła to, na czym już możesz się oprzeć, i zrobiła
-              krok, który do tej pory odkładałaś.
+              Celem nie jest stworzenie „nowej Ciebie”. Chodzi o to, żeby
+              wyraźniej zobaczyć, na czym możesz się oprzeć, i zrobić krok, który
+              do tej pory odkładałaś.
             </p>
             <a
               className={[styles.primaryButton, styles.wellenaCta].join(" ")}
@@ -319,9 +312,6 @@ function ResultScreen({ score }: { score: number }) {
             >
               Zobacz, jak działa Wellena
             </a>
-            <p className={styles.wellenaMeta}>
-              30 dni · indywidualny proces · program rozwojowy, nie terapia
-            </p>
           </div>
         </div>
       </section>
