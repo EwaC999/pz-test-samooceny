@@ -4,7 +4,11 @@
 }
 
 .header {
+  display: flex;
   width: min(1180px, calc(100% - 48px));
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
   margin: 0 auto;
   padding: 30px 0 10px;
 }
@@ -23,6 +27,24 @@
   display: block;
   width: 300px;
   height: auto;
+}
+
+.header .headerWellenaPlaceholder {
+  display: grid;
+  min-width: 190px;
+  min-height: 60px;
+  place-items: center;
+  padding: 12px 20px;
+  border: 1px dashed rgba(63, 94, 90, 0.45);
+  border-radius: 10px;
+  color: var(--green);
+  font-size: 0.7rem;
+  font-weight: 650;
+  letter-spacing: 0.09em;
+  line-height: 1.35;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .main {
@@ -703,33 +725,6 @@
   line-height: 1;
 }
 
-.educationStepsIcon {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 4px;
-  padding-bottom: 16px;
-}
-
-.educationStepsIcon span {
-  display: block;
-  width: 7px;
-  border-radius: 2px 2px 0 0;
-  background: currentColor;
-}
-
-.educationStepsIcon span:nth-child(1) {
-  height: 9px;
-}
-
-.educationStepsIcon span:nth-child(2) {
-  height: 16px;
-}
-
-.educationStepsIcon span:nth-child(3) {
-  height: 23px;
-}
-
 .educationCard h3,
 .exerciseStep h3,
 .wellenaDetails h3 {
@@ -843,25 +838,6 @@
 .wellenaVisual img {
   object-fit: cover;
   object-position: 55% center;
-}
-
-.wellenaLogoPlaceholder {
-  display: grid;
-  width: max-content;
-  min-width: 190px;
-  min-height: 68px;
-  place-items: center;
-  margin: 0 0 clamp(35px, 5vw, 64px) auto;
-  padding: 14px 22px;
-  border: 1px dashed rgba(191, 161, 129, 0.72);
-  border-radius: 10px;
-  color: var(--camel);
-  font-size: 0.72rem;
-  font-weight: 650;
-  letter-spacing: 0.1em;
-  line-height: 1.4;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .wellenaCopy h2 {
@@ -1014,7 +990,15 @@
   }
 
   .header img {
-    width: 250px;
+    width: min(205px, 58vw);
+  }
+
+  .header .headerWellenaPlaceholder {
+    min-width: 116px;
+    min-height: 48px;
+    padding: 8px 10px;
+    font-size: 0.55rem;
+    letter-spacing: 0.06em;
   }
 
   .main {
@@ -1287,10 +1271,6 @@
   .wellenaVisual {
     border-radius: 18px;
     aspect-ratio: 4 / 3;
-  }
-
-  .wellenaLogoPlaceholder {
-    margin: 0 0 29px;
   }
 
   .wellenaCopy h2 {

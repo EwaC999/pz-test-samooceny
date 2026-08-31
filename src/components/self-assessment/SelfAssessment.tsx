@@ -138,9 +138,9 @@ function ResultScreen({ score }: { score: number }) {
             Już wiesz, od czego zaczynasz. Teraz możesz pójść dalej.
           </h2>
           <p>
-            Przez kolejne 30 dni Wellena pomoże Ci zobaczyć, na czym możesz się
-            oprzeć, zrozumieć, co Cię zatrzymuje, i przełożyć wnioski na małe,
-            konkretne działania w codziennym życiu.
+            Wellena to 30-dniowy indywidualny program budowania pewności siebie z
+            osobistą przewodniczką AI. Pomaga Ci lepiej poznać siebie, znaleźć
+            realne podstawy zaufania do siebie i przełożyć je na działanie.
           </p>
         </div>
         <a
@@ -175,15 +175,8 @@ function ResultScreen({ score }: { score: number }) {
           </article>
 
           <article className={styles.educationCard}>
-            <span
-              className={[styles.educationIcon, styles.educationStepsIcon].join(
-                " ",
-              )}
-              aria-hidden="true"
-            >
-              <span />
-              <span />
-              <span />
+            <span className={styles.educationIcon} aria-hidden="true">
+              ✦
             </span>
             <h3>Poczucie własnej wartości nie jest ustalone raz na zawsze</h3>
             <p>
@@ -273,18 +266,14 @@ function ResultScreen({ score }: { score: number }) {
             </div>
 
             <div className={styles.wellenaCopy}>
-              <div className={styles.wellenaLogoPlaceholder}>
-                Miejsce na logo Welleny
-              </div>
               <h2 id="wellena-title">
                 Nie zawsze brakuje Ci kompetencji. Czasem najbardziej zatrzymuje
                 Cię brak zaufania do siebie.
               </h2>
               <p className={styles.wellenaSummary}>
-                Wellena to 30-dniowy indywidualny program budowania pewności
-                siebie z osobistą przewodniczką AI. Pomaga Ci lepiej poznać
-                siebie, znaleźć realne podstawy zaufania do siebie i przełożyć je
-                na działanie.
+                Wellena pomoże Ci zobaczyć, na czym możesz się oprzeć, zrozumieć,
+                co Cię zatrzymuje, i przełożyć wnioski na małe, konkretne
+                działania w codziennym życiu.
               </p>
             </div>
           </div>
@@ -508,6 +497,15 @@ export function SelfAssessment() {
             priority
           />
         </a>
+        {stage === "result" && (
+          <a
+            className={styles.headerWellenaPlaceholder}
+            href="https://wellena.pl"
+            aria-label="Wellena — miejsce na logo"
+          >
+            Miejsce na logo Welleny
+          </a>
+        )}
       </header>
 
       {stage === "result" && score !== null ? (

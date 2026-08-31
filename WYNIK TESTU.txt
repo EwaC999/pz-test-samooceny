@@ -1,5 +1,7 @@
 PRACOWNIA ŻYCIA
 
+[Placeholder na logo Welleny po prawej, na tej samej wysokości co logo Pracowni Życia]
+
 TEST SAMOOCENY
 
 ## Twój wynik to 27 na 40 punktów
@@ -15,7 +17,7 @@ Test nie jest narzędziem klinicznym ani diagnozą psychologiczną. Niezależnie
 
 Już wiesz, od czego zaczynasz. Teraz możesz pójść dalej.
 
-Przez kolejne 30 dni Wellena pomoże Ci zobaczyć, na czym możesz się oprzeć, zrozumieć, co Cię zatrzymuje, i przełożyć wnioski na małe, konkretne działania w codziennym życiu.
+Wellena to 30-dniowy indywidualny program budowania pewności siebie z osobistą przewodniczką AI. Pomaga Ci lepiej poznać siebie, znaleźć realne podstawy zaufania do siebie i przełożyć je na działanie.
 
 [Zrób kolejny krok z Welleną →]
 
@@ -56,12 +58,10 @@ Nie po to, żeby przekonywać siebie, że na pewno się uda. Po to, żeby obok o
 
 WELLENA — PROGRAM PRACOWNI ŻYCIA
 
-[Placeholder na logo Welleny w prawym górnym rogu sekcji; na telefonie nad nagłówkiem]
-
 Nie zawsze brakuje Ci kompetencji. Czasem najbardziej zatrzymuje Cię brak zaufania do siebie.
 
 
-Wellena to 30-dniowy indywidualny program budowania pewności siebie z osobistą przewodniczką AI. Pomaga Ci lepiej poznać siebie, znaleźć realne podstawy zaufania do siebie i przełożyć je na działanie.
+Wellena pomoże Ci zobaczyć, na czym możesz się oprzeć, zrozumieć, co Cię zatrzymuje, i przełożyć wnioski na małe, konkretne działania w codziennym życiu.
 
 
 
